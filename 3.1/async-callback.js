@@ -7,6 +7,7 @@ const readFileAsArray = function(file, cb) {
     }
 
     const lines = data.toString().trim().split('\n');
+    console.log(lines)
     cb(null, lines);
   });
 };
@@ -16,6 +17,7 @@ readFileAsArray('./numbers', (err, lines) => {
   if (err) throw err;
 
   const numbers = lines.map(Number);
+  console.log(numbers)
   const oddNumbers = numbers.filter(number => number % 2 === 1);
   console.log('odd numbers count:', oddNumbers.length);
 });

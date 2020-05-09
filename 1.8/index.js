@@ -22,7 +22,7 @@
 
 
 require('./ascii-art')();
-// console.log(require.cache);
+ console.log(require.cache);
 // delete require.cache['/Users/samer/jscomplete/1.8/ascii-art.js']
 
 require('./ascii-art')();

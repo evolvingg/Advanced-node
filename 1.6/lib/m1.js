@@ -6,3 +6,6 @@ console.log(m2);
 
 exports.content.push(11);
 exports.content.push(111);
+
+
+console.log(module,'...')

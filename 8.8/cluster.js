@@ -34,7 +34,7 @@ if (cluster.isMaster) {
       worker.disconnect();
     };
 
-    restartWorker(0);
+    //restartWorker(0);
   });
 
 } else {

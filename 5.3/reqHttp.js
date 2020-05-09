@@ -1,8 +1,8 @@
-const https = require('https');
+const http = require('http');
 
 // req: http.ClientRequest
-const req = https.get(
-  'https://www.google.com',
+const req = http.request(
+  {hostname:'www.google.com'},
   (res) => {
     // res: http.IncomingMessage
     console.log(res.statusCode);
@@ -16,4 +16,9 @@ const req = https.get(
 
 req.on('error', (e) => console.log(e));
 
-console.log(req.agent); // http.Agent
+req.end();
+//console.log(req.agent); // http.Agent
+
+
+//other way using get()
+//in httpGet file

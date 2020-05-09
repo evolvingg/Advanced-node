@@ -11,3 +11,4 @@ if (require.main == module) {
   // Being required
   module.exports = print;
 }
+console.log(process.argv,';;;');

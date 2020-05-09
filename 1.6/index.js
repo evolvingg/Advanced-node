@@ -21,4 +21,4 @@
 
 // Circular module
 const m1 = require('./lib/m1');
-console.log(m1);
+console.log(m1,'----',module);
